@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script src="socket.io.min.js"></script>
+</head>
+<body>
+	<script>
+
+		var serverURL = "http://localhost:4242"
+		var socket = io.connect(serverURL);
+
+		socket.on('connect', function (){
+			console.log("Estoy conectado.");
+		});
+	</script>
+</body>
+</html>
